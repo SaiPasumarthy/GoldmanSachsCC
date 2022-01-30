@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AlamofireNetworkActivityIndicator
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
