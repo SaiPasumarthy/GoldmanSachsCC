@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Astronomy Picture View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AstronomyPictureViewController" id="BYZ-38-t0r" customClass="AstronomyPictureViewController" customModule="GoldmanSachsCC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kb3-PM-CbM">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CcJ-ge-iGo"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U7d-D4-8vm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kb3-PM-CbM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DCR-5o-Yh8"/>
+                            <constraint firstItem="kb3-PM-CbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ipt-q8-m49"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kb3-PM-CbM" secondAttribute="trailing" id="Nsv-VY-OAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kb3-PM-CbM" secondAttribute="bottom" id="mr4-vr-mDg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="astronomyPictureTableView" destination="kb3-PM-CbM" id="xgz-tM-7gh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="-423.69668246445497"/>
+        </scene>
+        <!--Search Astronomy Picture View Controller-->
+        <scene sceneID="3Tj-uk-Y5o">
+            <objects>
+                <viewController storyboardIdentifier="SearchAstronomyPictureViewController" id="kuo-Uf-ibe" customClass="SearchAstronomyPictureViewController" customModule="GoldmanSachsCC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDU-5o-eMG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oRb-At-GDc">
+                                <rect key="frame" x="20" y="54" width="350" height="88"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="foL-em-rMP">
+                                        <rect key="frame" x="0.0" y="0.0" width="271.66666666666669" height="88"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ohd-CF-Ff5">
+                                                <rect key="frame" x="0.0" y="0.0" width="271.66666666666669" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEC-5M-tre">
+                                                        <rect key="frame" x="0.0" y="0.0" width="219.66666666666666" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-qk-o5D">
+                                                        <rect key="frame" x="239.66666666666669" y="0.0" width="32" height="34"/>
+                                                        <state key="normal" image="calendar"/>
+                                                        <connections>
+                                                            <action selector="selectTheStartDate:" destination="kuo-Uf-ibe" eventType="touchUpInside" id="uUb-Kg-yxf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-es-xXq">
+                                                <rect key="frame" x="0.0" y="54" width="271.66666666666669" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BN9-T4-57C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="219.66666666666666" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAg-I9-Q9l">
+                                                        <rect key="frame" x="239.66666666666669" y="0.0" width="32" height="34"/>
+                                                        <state key="normal" image="calendar"/>
+                                                        <connections>
+                                                            <action selector="selectTheEndDate:" destination="kuo-Uf-ibe" eventType="touchUpInside" id="pz8-nO-Gnd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h8-TT-ASG">
+                                        <rect key="frame" x="281.66666666666669" y="0.0" width="68.333333333333314" height="88"/>
+                                        <state key="normal" image="Search"/>
+                                        <connections>
+                                            <action selector="searchTheAstronomyPictures:" destination="kuo-Uf-ibe" eventType="touchUpInside" id="MhX-ty-C7t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7N-yM-IAV">
+                                <rect key="frame" x="163" y="152" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Co4-ad-hWX"/>
+                                    <constraint firstAttribute="width" constant="64" id="Hr1-ET-lfo"/>
+                                </constraints>
+                                <state key="normal" image="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissViewController:" destination="kuo-Uf-ibe" eventType="touchUpInside" id="WLl-Ba-j7b"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpk-ig-bwQ">
+                                <rect key="frame" x="0.0" y="564" width="390" height="246"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="hL2-rv-8wb">
+                                        <rect key="frame" x="0.0" y="30" width="390" height="216"/>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                            <!--1970-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                            <!--2037-12-31 11:00:00 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="pickTheDate:" destination="kuo-Uf-ibe" eventType="valueChanged" id="sr8-Wj-QZe"/>
+                                        </connections>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0T-dR-2gb">
+                                        <rect key="frame" x="343" y="0.0" width="37" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LYQ-oF-HXt"/>
+                                        </constraints>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="doneWithDatePicker:" destination="kuo-Uf-ibe" eventType="touchUpInside" id="F6y-GD-Fp1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hL2-rv-8wb" secondAttribute="bottom" id="8V2-L1-70N"/>
+                                    <constraint firstItem="hL2-rv-8wb" firstAttribute="top" secondItem="g0T-dR-2gb" secondAttribute="bottom" id="Bj3-X6-V5F"/>
+                                    <constraint firstItem="g0T-dR-2gb" firstAttribute="top" secondItem="Bpk-ig-bwQ" secondAttribute="top" id="egZ-Pk-HHq"/>
+                                    <constraint firstAttribute="trailing" secondItem="g0T-dR-2gb" secondAttribute="trailing" constant="10" id="hr9-MH-Ubr"/>
+                                    <constraint firstItem="g0T-dR-2gb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bpk-ig-bwQ" secondAttribute="leading" constant="20" symbolic="YES" id="m50-hl-kub"/>
+                                    <constraint firstAttribute="trailing" secondItem="hL2-rv-8wb" secondAttribute="trailing" id="q1T-fm-x9b"/>
+                                    <constraint firstItem="hL2-rv-8wb" firstAttribute="leading" secondItem="Bpk-ig-bwQ" secondAttribute="leading" id="uie-Tu-2vw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L37-IY-UMQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L37-IY-UMQ" firstAttribute="bottom" secondItem="Bpk-ig-bwQ" secondAttribute="bottom" id="03h-30-mWI"/>
+                            <constraint firstItem="L37-IY-UMQ" firstAttribute="trailing" secondItem="oRb-At-GDc" secondAttribute="trailing" constant="20" id="49L-vn-xhR"/>
+                            <constraint firstItem="Bpk-ig-bwQ" firstAttribute="leading" secondItem="L37-IY-UMQ" secondAttribute="leading" id="DpL-G4-lDX"/>
+                            <constraint firstItem="k7N-yM-IAV" firstAttribute="centerX" secondItem="DDU-5o-eMG" secondAttribute="centerX" id="NVK-gI-wT7"/>
+                            <constraint firstItem="L37-IY-UMQ" firstAttribute="trailing" secondItem="Bpk-ig-bwQ" secondAttribute="trailing" id="Vbk-5A-A9f"/>
+                            <constraint firstItem="k7N-yM-IAV" firstAttribute="top" secondItem="oRb-At-GDc" secondAttribute="bottom" constant="10" id="WNE-VT-0o0"/>
+                            <constraint firstItem="oRb-At-GDc" firstAttribute="top" secondItem="L37-IY-UMQ" secondAttribute="top" constant="10" id="iLh-U6-VMt"/>
+                            <constraint firstItem="oRb-At-GDc" firstAttribute="leading" secondItem="L37-IY-UMQ" secondAttribute="leading" constant="20" id="iRf-9c-Kwh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="F47-ZC-Oqc"/>
+                    <connections>
+                        <outlet property="endDateTextField" destination="BN9-T4-57C" id="HXL-fV-EZW"/>
+                        <outlet property="pickerView" destination="Bpk-ig-bwQ" id="h5f-z7-Ihg"/>
+                        <outlet property="searchDatePicker" destination="hL2-rv-8wb" id="pXe-fV-YFH"/>
+                        <outlet property="startDateTextField" destination="vEC-5M-tre" id="UgM-QM-n8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Re-G1-QLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.69230769230762" y="-423.69668246445497"/>
+        </scene>
+        <!--Favourites View Controller-->
+        <scene sceneID="ydR-cB-M5j">
+            <objects>
+                <viewController storyboardIdentifier="FavouritesViewController" id="YwU-PY-IJV" customClass="FavouritesViewController" customModule="GoldmanSachsCC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWb-yx-Pze">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aI8-E7-qUc">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YwU-PY-IJV" id="S8d-zr-qul"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Dg-Kr-v5E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Dg-Kr-v5E" firstAttribute="bottom" secondItem="aI8-E7-qUc" secondAttribute="bottom" id="1X0-Tj-L3f"/>
+                            <constraint firstItem="aI8-E7-qUc" firstAttribute="top" secondItem="0Dg-Kr-v5E" secondAttribute="top" id="4yG-d8-sdm"/>
+                            <constraint firstItem="aI8-E7-qUc" firstAttribute="leading" secondItem="0Dg-Kr-v5E" secondAttribute="leading" id="gnk-6i-7Pn"/>
+                            <constraint firstItem="0Dg-Kr-v5E" firstAttribute="trailing" secondItem="aI8-E7-qUc" secondAttribute="trailing" id="ybv-DR-mTV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favouritesTableView" destination="aI8-E7-qUc" id="pSY-Cb-8H7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27j-pv-DkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917" y="-424"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dismiss" width="32" height="32"/>
+        <image name="Search" width="32" height="32"/>
+        <image name="calendar" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
