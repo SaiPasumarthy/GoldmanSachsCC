@@ -3,29 +3,93 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9809030327A3860200E388FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809030227A3860200E388FB /* AppDelegate.swift */; };
 		9809030527A3860200E388FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809030427A3860200E388FB /* SceneDelegate.swift */; };
-		9809030727A3860200E388FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809030627A3860200E388FB /* ViewController.swift */; };
-		9809030A27A3860200E388FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9809030827A3860200E388FB /* Main.storyboard */; };
 		9809030D27A3860200E388FB /* GoldmanSachsCC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9809030B27A3860200E388FB /* GoldmanSachsCC.xcdatamodeld */; };
 		9809030F27A3860500E388FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9809030E27A3860500E388FB /* Assets.xcassets */; };
 		9809031227A3860500E388FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9809031027A3860500E388FB /* LaunchScreen.storyboard */; };
+		9809031C27A4D92100E388FB /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809031B27A4D92100E388FB /* PersistentStorage.swift */; };
+		9809032327A4E83800E388FB /* APDatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809032227A4E83800E388FB /* APDatabaseRepository.swift */; };
+		9809032527A4E87800E388FB /* AstronomyPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809032427A4E87800E388FB /* AstronomyPicture.swift */; };
+		9809032C27A4E93F00E388FB /* CDAstronomyPicture+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809032A27A4E93F00E388FB /* CDAstronomyPicture+CoreDataClass.swift */; };
+		9809032D27A4E93F00E388FB /* CDAstronomyPicture+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809032B27A4E93F00E388FB /* CDAstronomyPicture+CoreDataProperties.swift */; };
+		9809032F27A4EA9400E388FB /* APDatabaseDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809032E27A4EA9400E388FB /* APDatabaseDataRepository.swift */; };
+		9809033227A5010C00E388FB /* AstronomyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809033127A5010C00E388FB /* AstronomyPictureViewModel.swift */; };
+		9809033527A503A400E388FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809033427A503A400E388FB /* Date+Extension.swift */; };
+		9809033927A507A500E388FB /* AstronomyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809033827A507A500E388FB /* AstronomyPictureViewController.swift */; };
+		9809033D27A5089B00E388FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9809033B27A5089B00E388FB /* Main.storyboard */; };
+		9809034027A50DF500E388FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9809033F27A50DF500E388FB /* Alamofire */; };
+		9809034327A50F1F00E388FB /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809034227A50F1F00E388FB /* Connectivity.swift */; };
+		9809034927A541B200E388FB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9809034827A541B200E388FB /* SDWebImage */; };
+		9809034D27A5439E00E388FB /* APBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809034C27A5439E00E388FB /* APBaseRepository.swift */; };
+		9809034F27A543EA00E388FB /* APAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809034E27A543EA00E388FB /* APAPIRepository.swift */; };
+		9809035127A544D900E388FB /* APAPIDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809035027A544D900E388FB /* APAPIDataRepository.swift */; };
+		9809035327A5578800E388FB /* SearchAstronomyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809035227A5578800E388FB /* SearchAstronomyPictureViewController.swift */; };
+		9809039027A5A96500E388FB /* CoordinatorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809038C27A5A96500E388FB /* CoordinatorBoard.swift */; };
+		9809039127A5A96500E388FB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809038D27A5A96500E388FB /* MainCoordinator.swift */; };
+		9809039227A5A96500E388FB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809038E27A5A96500E388FB /* Coordinator.swift */; };
+		9809039327A5A96500E388FB /* MainBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809038F27A5A96500E388FB /* MainBaseCoordinator.swift */; };
+		9809039727A5A9B900E388FB /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809039627A5A9B900E388FB /* FavouritesViewController.swift */; };
+		9809039927A5ABB000E388FB /* AstronomyPicturesBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809039827A5ABB000E388FB /* AstronomyPicturesBaseCoordinator.swift */; };
+		9809039B27A5ABDD00E388FB /* AstronomyPicturesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809039A27A5ABDD00E388FB /* AstronomyPicturesCoordinator.swift */; };
+		9809039D27A5AC2100E388FB /* FavoritesBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809039C27A5AC2100E388FB /* FavoritesBaseCoordinator.swift */; };
+		9809039F27A5AC3600E388FB /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809039E27A5AC3600E388FB /* FavouritesCoordinator.swift */; };
+		980903A727A6403300E388FB /* AstronomyPictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903A527A6403300E388FB /* AstronomyPictureTableViewCell.swift */; };
+		980903A827A6403300E388FB /* AstronomyPictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980903A627A6403300E388FB /* AstronomyPictureTableViewCell.xib */; };
+		980903AA27A6844500E388FB /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903A927A6844500E388FB /* FavouritesViewModel.swift */; };
+		980903AC27A68D3E00E388FB /* FavouritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903AB27A68D3E00E388FB /* FavouritesRepository.swift */; };
+		980903AF27A68D6500E388FB /* FavouritesDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903AE27A68D6500E388FB /* FavouritesDataRepository.swift */; };
+		980903B827A6C8A000E388FB /* SearchAstronomyPicturesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903B727A6C8A000E388FB /* SearchAstronomyPicturesDelegate.swift */; };
+		980903BA27A6CA3600E388FB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903B927A6CA3600E388FB /* String+Extension.swift */; };
+		980903BD27A6CDB900E388FB /* AstronomyPictureCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980903BC27A6CDB900E388FB /* AstronomyPictureCellDelegate.swift */; };
+		980903C027A6F21D00E388FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 980903BF27A6F21D00E388FB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		980902FF27A3860200E388FB /* GoldmanSachsCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldmanSachsCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9809030227A3860200E388FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9809030427A3860200E388FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9809030627A3860200E388FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9809030927A3860200E388FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9809030C27A3860200E388FB /* GoldmanSachsCC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoldmanSachsCC.xcdatamodel; sourceTree = "<group>"; };
 		9809030E27A3860500E388FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9809031127A3860500E388FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9809031327A3860500E388FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9809031B27A4D92100E388FB /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		9809032227A4E83800E388FB /* APDatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDatabaseRepository.swift; sourceTree = "<group>"; };
+		9809032427A4E87800E388FB /* AstronomyPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPicture.swift; sourceTree = "<group>"; };
+		9809032A27A4E93F00E388FB /* CDAstronomyPicture+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDAstronomyPicture+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9809032B27A4E93F00E388FB /* CDAstronomyPicture+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDAstronomyPicture+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9809032E27A4EA9400E388FB /* APDatabaseDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDatabaseDataRepository.swift; sourceTree = "<group>"; };
+		9809033127A5010C00E388FB /* AstronomyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewModel.swift; sourceTree = "<group>"; };
+		9809033427A503A400E388FB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9809033827A507A500E388FB /* AstronomyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewController.swift; sourceTree = "<group>"; };
+		9809033C27A5089B00E388FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GoldmanSachsCC/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9809034227A50F1F00E388FB /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		9809034C27A5439E00E388FB /* APBaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APBaseRepository.swift; sourceTree = "<group>"; };
+		9809034E27A543EA00E388FB /* APAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAPIRepository.swift; sourceTree = "<group>"; };
+		9809035027A544D900E388FB /* APAPIDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAPIDataRepository.swift; sourceTree = "<group>"; };
+		9809035227A5578800E388FB /* SearchAstronomyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAstronomyPictureViewController.swift; sourceTree = "<group>"; };
+		9809038C27A5A96500E388FB /* CoordinatorBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorBoard.swift; sourceTree = "<group>"; };
+		9809038D27A5A96500E388FB /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9809038E27A5A96500E388FB /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9809038F27A5A96500E388FB /* MainBaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBaseCoordinator.swift; sourceTree = "<group>"; };
+		9809039627A5A9B900E388FB /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		9809039827A5ABB000E388FB /* AstronomyPicturesBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPicturesBaseCoordinator.swift; sourceTree = "<group>"; };
+		9809039A27A5ABDD00E388FB /* AstronomyPicturesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPicturesCoordinator.swift; sourceTree = "<group>"; };
+		9809039C27A5AC2100E388FB /* FavoritesBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBaseCoordinator.swift; sourceTree = "<group>"; };
+		9809039E27A5AC3600E388FB /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
+		980903A527A6403300E388FB /* AstronomyPictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureTableViewCell.swift; sourceTree = "<group>"; };
+		980903A627A6403300E388FB /* AstronomyPictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyPictureTableViewCell.xib; sourceTree = "<group>"; };
+		980903A927A6844500E388FB /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
+		980903AB27A68D3E00E388FB /* FavouritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesRepository.swift; sourceTree = "<group>"; };
+		980903AE27A68D6500E388FB /* FavouritesDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesDataRepository.swift; sourceTree = "<group>"; };
+		980903B727A6C8A000E388FB /* SearchAstronomyPicturesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAstronomyPicturesDelegate.swift; sourceTree = "<group>"; };
+		980903B927A6CA3600E388FB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		980903BC27A6CDB900E388FB /* AstronomyPictureCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureCellDelegate.swift; sourceTree = "<group>"; };
+		980903BF27A6F21D00E388FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9809034927A541B200E388FB /* SDWebImage in Frameworks */,
+				9809034027A50DF500E388FB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +108,7 @@
 		980902F627A3860200E388FB = {
 			isa = PBXGroup;
 			children = (
+				980903BF27A6F21D00E388FB /* README.md */,
 				9809030127A3860200E388FB /* GoldmanSachsCC */,
 				9809030027A3860200E388FB /* Products */,
 			);
@@ -58,16 +125,190 @@
 		9809030127A3860200E388FB /* GoldmanSachsCC */ = {
 			isa = PBXGroup;
 			children = (
-				9809030227A3860200E388FB /* AppDelegate.swift */,
-				9809030427A3860200E388FB /* SceneDelegate.swift */,
-				9809030627A3860200E388FB /* ViewController.swift */,
-				9809030827A3860200E388FB /* Main.storyboard */,
+				980903BB27A6CDAD00E388FB /* Support */,
+				980903B527A6C22900E388FB /* Main */,
+				9809038827A5A8E000E388FB /* Coordinator */,
+				9809038627A5A88900E388FB /* Favourites */,
+				9809038527A5A86800E388FB /* AstronomyPictures */,
+				9809034B27A5433E00E388FB /* Model */,
+				9809034A27A5432C00E388FB /* Repository */,
+				9809034427A53FC800E388FB /* Views */,
+				9809034127A50F0A00E388FB /* Connectivity */,
+				9809033327A502A700E388FB /* Extensions */,
+				9809031D27A4DE4700E388FB /* CoreDataSupportFiles */,
 				9809030E27A3860500E388FB /* Assets.xcassets */,
-				9809031027A3860500E388FB /* LaunchScreen.storyboard */,
 				9809031327A3860500E388FB /* Info.plist */,
 				9809030B27A3860200E388FB /* GoldmanSachsCC.xcdatamodeld */,
 			);
 			path = GoldmanSachsCC;
+			sourceTree = "<group>";
+		};
+		9809031D27A4DE4700E388FB /* CoreDataSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9809032A27A4E93F00E388FB /* CDAstronomyPicture+CoreDataClass.swift */,
+				9809032B27A4E93F00E388FB /* CDAstronomyPicture+CoreDataProperties.swift */,
+				9809031B27A4D92100E388FB /* PersistentStorage.swift */,
+			);
+			path = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		9809033027A500EF00E388FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9809033127A5010C00E388FB /* AstronomyPictureViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9809033327A502A700E388FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9809033427A503A400E388FB /* Date+Extension.swift */,
+				980903B927A6CA3600E388FB /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9809033A27A507AB00E388FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9809033827A507A500E388FB /* AstronomyPictureViewController.swift */,
+				9809035227A5578800E388FB /* SearchAstronomyPictureViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9809034127A50F0A00E388FB /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				9809034227A50F1F00E388FB /* Connectivity.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		9809034427A53FC800E388FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				980903A527A6403300E388FB /* AstronomyPictureTableViewCell.swift */,
+				980903A627A6403300E388FB /* AstronomyPictureTableViewCell.xib */,
+				9809033B27A5089B00E388FB /* Main.storyboard */,
+				9809031027A3860500E388FB /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9809034A27A5432C00E388FB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9809034C27A5439E00E388FB /* APBaseRepository.swift */,
+				9809032227A4E83800E388FB /* APDatabaseRepository.swift */,
+				9809034E27A543EA00E388FB /* APAPIRepository.swift */,
+				980903AB27A68D3E00E388FB /* FavouritesRepository.swift */,
+				9809032E27A4EA9400E388FB /* APDatabaseDataRepository.swift */,
+				9809035027A544D900E388FB /* APAPIDataRepository.swift */,
+				980903AE27A68D6500E388FB /* FavouritesDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9809034B27A5433E00E388FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9809032427A4E87800E388FB /* AstronomyPicture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9809038527A5A86800E388FB /* AstronomyPictures */ = {
+			isa = PBXGroup;
+			children = (
+				980903B627A6C88000E388FB /* Support */,
+				9809038727A5A8D100E388FB /* Coordinator */,
+				9809033027A500EF00E388FB /* ViewModel */,
+				9809033A27A507AB00E388FB /* Controller */,
+			);
+			path = AstronomyPictures;
+			sourceTree = "<group>";
+		};
+		9809038627A5A88900E388FB /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				9809038B27A5A90E00E388FB /* Controller */,
+				9809038A27A5A8F200E388FB /* Coordinator */,
+				9809038927A5A8EB00E388FB /* ViewModel */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		9809038727A5A8D100E388FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9809039827A5ABB000E388FB /* AstronomyPicturesBaseCoordinator.swift */,
+				9809039A27A5ABDD00E388FB /* AstronomyPicturesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9809038827A5A8E000E388FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9809038F27A5A96500E388FB /* MainBaseCoordinator.swift */,
+				9809038E27A5A96500E388FB /* Coordinator.swift */,
+				9809038C27A5A96500E388FB /* CoordinatorBoard.swift */,
+				9809038D27A5A96500E388FB /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9809038927A5A8EB00E388FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				980903A927A6844500E388FB /* FavouritesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9809038A27A5A8F200E388FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9809039C27A5AC2100E388FB /* FavoritesBaseCoordinator.swift */,
+				9809039E27A5AC3600E388FB /* FavouritesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9809038B27A5A90E00E388FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9809039627A5A9B900E388FB /* FavouritesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		980903B527A6C22900E388FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9809030227A3860200E388FB /* AppDelegate.swift */,
+				9809030427A3860200E388FB /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		980903B627A6C88000E388FB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				980903B727A6C8A000E388FB /* SearchAstronomyPicturesDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		980903BB27A6CDAD00E388FB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				980903BC27A6CDB900E388FB /* AstronomyPictureCellDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +327,10 @@
 			dependencies = (
 			);
 			name = GoldmanSachsCC;
+			packageProductDependencies = (
+				9809033F27A50DF500E388FB /* Alamofire */,
+				9809034827A541B200E388FB /* SDWebImage */,
+			);
 			productName = GoldmanSachsCC;
 			productReference = 980902FF27A3860200E388FB /* GoldmanSachsCC.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +358,10 @@
 				Base,
 			);
 			mainGroup = 980902F627A3860200E388FB;
+			packageReferences = (
+				9809033E27A50DF500E388FB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9809034727A541B200E388FB /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 9809030027A3860200E388FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,7 +378,9 @@
 			files = (
 				9809031227A3860500E388FB /* LaunchScreen.storyboard in Resources */,
 				9809030F27A3860500E388FB /* Assets.xcassets in Resources */,
-				9809030A27A3860200E388FB /* Main.storyboard in Resources */,
+				980903C027A6F21D00E388FB /* README.md in Resources */,
+				9809033D27A5089B00E388FB /* Main.storyboard in Resources */,
+				980903A827A6403300E388FB /* AstronomyPictureTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +391,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9809030727A3860200E388FB /* ViewController.swift in Sources */,
+				9809039727A5A9B900E388FB /* FavouritesViewController.swift in Sources */,
+				9809032527A4E87800E388FB /* AstronomyPicture.swift in Sources */,
+				9809039127A5A96500E388FB /* MainCoordinator.swift in Sources */,
+				9809035127A544D900E388FB /* APAPIDataRepository.swift in Sources */,
+				980903AA27A6844500E388FB /* FavouritesViewModel.swift in Sources */,
+				9809039B27A5ABDD00E388FB /* AstronomyPicturesCoordinator.swift in Sources */,
+				9809039D27A5AC2100E388FB /* FavoritesBaseCoordinator.swift in Sources */,
+				9809039927A5ABB000E388FB /* AstronomyPicturesBaseCoordinator.swift in Sources */,
 				9809030D27A3860200E388FB /* GoldmanSachsCC.xcdatamodeld in Sources */,
+				980903BD27A6CDB900E388FB /* AstronomyPictureCellDelegate.swift in Sources */,
+				9809032D27A4E93F00E388FB /* CDAstronomyPicture+CoreDataProperties.swift in Sources */,
+				9809032F27A4EA9400E388FB /* APDatabaseDataRepository.swift in Sources */,
+				9809039227A5A96500E388FB /* Coordinator.swift in Sources */,
+				9809034F27A543EA00E388FB /* APAPIRepository.swift in Sources */,
+				980903B827A6C8A000E388FB /* SearchAstronomyPicturesDelegate.swift in Sources */,
+				980903AC27A68D3E00E388FB /* FavouritesRepository.swift in Sources */,
+				9809033527A503A400E388FB /* Date+Extension.swift in Sources */,
+				980903BA27A6CA3600E388FB /* String+Extension.swift in Sources */,
+				9809032327A4E83800E388FB /* APDatabaseRepository.swift in Sources */,
+				9809039327A5A96500E388FB /* MainBaseCoordinator.swift in Sources */,
+				9809034327A50F1F00E388FB /* Connectivity.swift in Sources */,
+				9809039027A5A96500E388FB /* CoordinatorBoard.swift in Sources */,
+				9809033227A5010C00E388FB /* AstronomyPictureViewModel.swift in Sources */,
+				9809032C27A4E93F00E388FB /* CDAstronomyPicture+CoreDataClass.swift in Sources */,
 				9809030327A3860200E388FB /* AppDelegate.swift in Sources */,
+				9809033927A507A500E388FB /* AstronomyPictureViewController.swift in Sources */,
+				980903AF27A68D6500E388FB /* FavouritesDataRepository.swift in Sources */,
+				980903A727A6403300E388FB /* AstronomyPictureTableViewCell.swift in Sources */,
+				9809034D27A5439E00E388FB /* APBaseRepository.swift in Sources */,
+				9809035327A5578800E388FB /* SearchAstronomyPictureViewController.swift in Sources */,
+				9809031C27A4D92100E388FB /* PersistentStorage.swift in Sources */,
+				9809039F27A5AC3600E388FB /* FavouritesCoordinator.swift in Sources */,
 				9809030527A3860200E388FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,20 +430,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9809030827A3860200E388FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9809030927A3860200E388FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9809031027A3860500E388FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9809031127A3860500E388FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9809033B27A5089B00E388FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9809033C27A5089B00E388FB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -345,6 +625,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9809033E27A50DF500E388FB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.3;
+			};
+		};
+		9809034727A541B200E388FB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9809033F27A50DF500E388FB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9809033E27A50DF500E388FB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9809034827A541B200E388FB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9809034727A541B200E388FB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9809030B27A3860200E388FB /* GoldmanSachsCC.xcdatamodeld */ = {
