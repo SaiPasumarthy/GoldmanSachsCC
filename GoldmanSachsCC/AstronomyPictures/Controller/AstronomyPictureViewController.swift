@@ -73,7 +73,7 @@ extension AstronomyPictureViewController: AstronomyPictureCellDelegate {
 private extension AstronomyPictureViewController {
     
     func loadBarbuttonItems() {
-        let searchBarButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "Search"), style: .plain, target: self, action: #selector(navigateToSearchScreen))
+        let searchBarButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "search"), style: .plain, target: self, action: #selector(navigateToSearchScreen))
         let apodBarButtonItem = UIBarButtonItem(title: "APOD", style: .plain, target: self, action: #selector(getAstronomyPictureOfTheDay))
         
         self.navigationItem.rightBarButtonItems = [searchBarButtonItem, apodBarButtonItem]

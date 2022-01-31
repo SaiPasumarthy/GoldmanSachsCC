@@ -94,7 +94,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h8-TT-ASG">
                                         <rect key="frame" x="281.66666666666669" y="0.0" width="68.333333333333314" height="88"/>
-                                        <state key="normal" image="Search"/>
+                                        <state key="normal" image="search"/>
                                         <connections>
                                             <action selector="searchTheAstronomyPictures:" destination="kuo-Uf-ibe" eventType="touchUpInside" id="MhX-ty-C7t"/>
                                         </connections>
@@ -211,8 +211,8 @@
     </scenes>
     <resources>
         <image name="Dismiss" width="32" height="32"/>
-        <image name="Search" width="32" height="32"/>
         <image name="calendar" width="32" height="32"/>
+        <image name="search" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
