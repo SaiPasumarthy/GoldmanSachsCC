@@ -68,8 +68,7 @@ struct APDatabaseDataRepository: APDatabaseRepository {
                         cdAstronomyPicture.service_version = astronomyPicture.service_version
                         cdAstronomyPicture.favorite = false
                     }
-                } catch let error {
-                    debugPrint("Error fetching exisitng entity \(error)")
+                } catch {
                 }
             }
             

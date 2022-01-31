@@ -19,7 +19,6 @@ struct APAPIDataRepository: APAPIRepository {
     func getAstronomyPictures(from startDate: String, to endDate: String, completionHandler: @escaping (Array<AstronomyPicture>?, ErrorResponse?) -> Void) {
         
         AF.request(String(format: sourceURLString, startDate, endDate)).response { response in
-            debugPrint(response)
             if let err = response.error {
                 completionHandler(nil, ErrorResponse(code: 400, msg: err.localizedDescription, service_version: "v1"))
                 return
