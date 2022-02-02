@@ -43,12 +43,6 @@ extension AstronomyPictureViewController: UITableViewDataSource {
     }
 }
 
-extension AstronomyPictureViewController: NSFetchedResultsControllerDelegate {
-    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        astronomyPictureTableView.reloadData()
-    }
-}
-
 extension AstronomyPictureViewController: CoordinatorBoard { }
 
 extension AstronomyPictureViewController: SearchAstronomyPicturesDelegate {
